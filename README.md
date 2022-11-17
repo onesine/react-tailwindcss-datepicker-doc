@@ -11,7 +11,7 @@ Tailwind CSS uses [Next.js](https://nextjs.org/) for its documentation. Here is 
 2. Go into the project root directory
 
     ```sh
-    cd tailwindcss.com
+    cd react-tailwindcss-datepicker-doc
     ```
 
 3. Install JS dependencies
