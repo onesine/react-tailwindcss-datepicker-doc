@@ -30,7 +30,7 @@ const Sidebar = () => {
         ]
     }
     return (
-        <aside className="transition-all duration-300 overflow-hidden w-0 lg:w-[272px] h-screen fixed top-0 left-0 bg-zinc-50 dark:bg-slate-800 z-50">
+        <aside className="transition-all duration-300 lg:duration-[0s] overflow-hidden w-0 lg:w-[272px] h-screen fixed top-0 left-0 bg-zinc-50 dark:bg-slate-800 z-50">
             <Link href="/" className="h-[72px] w-full flex items-center justify-center font-semibold hover:text-gray-500 truncate">
                 React Tailwindcss Datepicker
             </Link>
