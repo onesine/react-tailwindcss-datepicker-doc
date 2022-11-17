@@ -71,6 +71,7 @@ export const StringColor = ({children}) => {
 
 export const StringText = ({children}) => (
     <>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <LightBlue>"</LightBlue><StringColor>{children}</StringColor><LightBlue>"</LightBlue>
     </>
 );
@@ -91,6 +92,7 @@ export const Coma = () => (
 
 export const InstallDatepicker = () => (
     <>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <LightBlue>import</LightBlue> Datepicker <LightBlue>from</LightBlue> <LightBlue>"</LightBlue><StringColor>react-tailwindcss-datepicker</StringColor><LightBlue>"</LightBlue>; <br/>
     </>
 );
@@ -103,6 +105,7 @@ export const Keyword = ({children}) => (
 
 export const ReactImport = () => (
     <>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <LightBlue>import</LightBlue> React<LightBlue>,</LightBlue> <LightBlue>{"{"}</LightBlue>useState<LightBlue>{"}"}</LightBlue> <LightBlue>from</LightBlue> <LightBlue>"</LightBlue><StringColor>react</StringColor><LightBlue>"</LightBlue><EndLine/> <br/>
     </>
 );
