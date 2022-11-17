@@ -22,7 +22,7 @@ const Nav = () => {
         }
     ];
 
-    const showLink = ["/install", "/demo", "/theming-options", "props", "advanced-features"].includes(router.pathname);
+    const showLink = ["/install", "/demo", "/theming-options", "/props", "/advanced-features"].includes(router.pathname);
 
     return (
         <nav className="fixed bg-white z-40 w-full  flex items-center justify-between py-3 md:py-6 px-4 md:px-10 border-b dark:bg-slate-900 dark:border-slate-700">
