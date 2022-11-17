@@ -1,11 +1,11 @@
-import {createContext, useEffect, useLayoutEffect, useMemo, useState} from "react";
+import {createContext, useEffect, useMemo, useState} from "react";
 
 export const ThemeContext = createContext({});
 
 const ThemeProvider = ({children}) => {
     const [theme, setTheme] = useState("light");
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             setTheme("dark");
         }

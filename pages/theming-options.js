@@ -1,4 +1,4 @@
-import React, {useContext, useLayoutEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import DocLayout from "../components/DocLayout";
 import CodeWindow, {
     FunctionColor, ImportantWord,
@@ -17,7 +17,7 @@ import Datepicker from "react-tailwindcss-datepicker";
 import ToggleTheme from "../components/ToggleTheme";
 
 const ThemingOptions = () => {
-    useLayoutEffect(() => {
+    useEffect(() => {
         document.title = "Theming options";
     }, [])
 

@@ -1,4 +1,4 @@
-import {useLayoutEffect} from "react";
+import {useEffect} from "react";
 import Nav from "../components/Nav";
 import HeroSection from "../components/HeroSection";
 import SuperFeatures from "../components/SuperFeatures";
@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import ThemeProvider from "../components/ThemeProvider";
 
 const Home = () => {
-    useLayoutEffect(() => {
+    useEffect(() => {
         document.title = "React Tailwindcss Datepicker";
     }, [])
 

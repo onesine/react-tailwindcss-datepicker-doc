@@ -1,4 +1,4 @@
-import {useLayoutEffect} from "react";
+import {useEffect} from "react";
 import DocLayout from "../components/DocLayout";
 import CodeWindow, {
     Separator,
@@ -13,7 +13,7 @@ import CodeWindow, {
 import {NavLink} from "../components/utils";
 
 const Install = () => {
-    useLayoutEffect(() => {
+    useEffect(() => {
         document.title = "Installation";
     }, [])
 

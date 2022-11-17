@@ -1,4 +1,4 @@
-import {useLayoutEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import DocLayout from "../components/DocLayout";
 import CodeWindow, {
     FunctionColor,
@@ -14,7 +14,7 @@ import {NavLink} from "../components/utils";
 import Datepicker from "react-tailwindcss-datepicker";
 
 const Props = () => {
-    useLayoutEffect(() => {
+    useEffect(() => {
         document.title = "Props";
     }, [])
 

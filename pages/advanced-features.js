@@ -1,4 +1,4 @@
-import {useLayoutEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import Datepicker from "react-tailwindcss-datepicker";
 import Link from "next/link";
 import DocLayout from "../components/DocLayout";
@@ -14,7 +14,7 @@ import CodeWindow, {
 import {NavLink} from "../components/utils";
 
 const AdvancedFeatures = () => {
-    useLayoutEffect(() => {
+    useEffect(() => {
         document.title = "Advanced features";
     }, [])
 
