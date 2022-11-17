@@ -1,8 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document'
-import {useLayoutEffect} from "react";
+import {useEffect} from "react";
 
 export default function Document() {
-    useLayoutEffect(() => {
+    useEffect(() => {
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
         } else {

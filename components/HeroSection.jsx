@@ -11,7 +11,7 @@ const HeroSection = () => {
 
                 <div className="flex items-center justify-center lg:justify-start space-x-4">
                     <Link href="/install" className="text-sm rounded-full text-white font-medium bg-sky-500 border-sky-600 hover:bg-sky-600 py-2.5 px-6 dark:bg-sky-600">Get Started</Link>
-                    <Link href="/https://github.com/onesine/react-tailwindcss-datepicker" target="_blank" className="text-sm rounded-full text-gray-900 font-medium bg-gray-200/50 border hover:bg-gray-300/50 py-2.5 px-6 dark:text-white/80 dark:bg-white/10 dark:hover:bg-white/20 dark:border-slate-700">View on GitHub</Link>
+                    <Link href="https://github.com/onesine/react-tailwindcss-datepicker" target="_blank" className="text-sm rounded-full text-gray-900 font-medium bg-gray-200/50 border hover:bg-gray-300/50 py-2.5 px-6 dark:text-white/80 dark:bg-white/10 dark:hover:bg-white/20 dark:border-slate-700">View on GitHub</Link>
                     <Link href="/demo" className="text-sm rounded-full text-gray-900 font-medium bg-gray-200/50 border hover:bg-gray-300/50 py-2.5 px-6 dark:text-white/80 dark:bg-white/10 dark:hover:bg-white/20 dark:border-slate-700">Demo</Link>
                 </div>
             </div>
