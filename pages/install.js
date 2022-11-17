@@ -48,7 +48,9 @@ const Install = () => {
             <p className="mb-4">Make sure you have installed the peer dependencies as well with the below versions.</p>
 
             <CodeWindow>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <LightBlue>"</LightBlue><StringColor>dayjs</StringColor><LightBlue>": "</LightBlue><StringColor>^1.11.6</StringColor><LightBlue>"</LightBlue> <br/>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <LightBlue>"</LightBlue><StringColor>react</StringColor><LightBlue>": "</LightBlue><StringColor>^18.2.0</StringColor><LightBlue>"</LightBlue> <br/>
             </CodeWindow>
 
@@ -59,18 +61,23 @@ const Install = () => {
             <p>Add the datepicker to your tailwind configuration using this code.</p>
 
             <CodeWindow type="bash">
+                {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
                 <Comment>// in your tailwind.config.js</Comment>
                 <LightBlue>module.exports = {"{"}</LightBlue> <br/>
                 <Indent>
+                    {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
                     <Comment>// ...</Comment>
                     <Red>content</Red><LightBlue>:</LightBlue> [ <br/>
                     <Indent>
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
                         <LightBlue>"</LightBlue><StringColor>./src/**/*.{"{"}js,jsx,ts,tsx{"}"}</StringColor><LightBlue>"</LightBlue><Coma/>
                     </Indent>
 
                     <Indent>
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
                         <LightBlue>"</LightBlue><StringColor>./node_modules/react-tailwindcss-datepicker/dist/index.esm.js</StringColor><LightBlue>"</LightBlue><Coma/>
                     </Indent>
+                    {/* eslint-disable-next-line react/jsx-no-comment-textnodes */}
                     <Comment>// ...</Comment>
                 </Indent>
                 <LightBlue>{"}"}</LightBlue> <br/>
