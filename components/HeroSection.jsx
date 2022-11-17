@@ -9,10 +9,10 @@ const HeroSection = () => {
 
                 <p className="text-lg md:text-xl lg:text-2xl text-gray-500 my-8 font-medium">A modern date range picker component for React using Tailwind 3 and dayjs.</p>
 
-                <div className="flex items-center justify-center lg:justify-start space-x-4">
-                    <Link href="/install" className="text-sm rounded-full text-white font-medium bg-sky-500 border-sky-600 hover:bg-sky-600 py-2.5 px-6 dark:bg-sky-600">Get Started</Link>
-                    <Link href="https://github.com/onesine/react-tailwindcss-datepicker" target="_blank" className="text-sm rounded-full text-gray-900 font-medium bg-gray-200/50 border hover:bg-gray-300/50 py-2.5 px-6 dark:text-white/80 dark:bg-white/10 dark:hover:bg-white/20 dark:border-slate-700">View on GitHub</Link>
-                    <Link href="/demo" className="text-sm rounded-full text-gray-900 font-medium bg-gray-200/50 border hover:bg-gray-300/50 py-2.5 px-6 dark:text-white/80 dark:bg-white/10 dark:hover:bg-white/20 dark:border-slate-700">Demo</Link>
+                <div className="flex items-center justify-center lg:justify-start space-x-2 md:space-x-4">
+                    <Link href="/install" className="text-xs md:text-sm rounded-full text-white font-medium bg-sky-500 border-sky-600 hover:bg-sky-600 py-2.5 px-6 dark:bg-sky-600">Get Started</Link>
+                    <Link href="https://github.com/onesine/react-tailwindcss-datepicker" target="_blank" className="text-xs md:text-sm rounded-full text-gray-900 font-medium bg-gray-200/50 border hover:bg-gray-300/50 py-2.5 px-6 dark:text-white/80 dark:bg-white/10 dark:hover:bg-white/20 dark:border-slate-700">View on GitHub</Link>
+                    <Link href="/demo" className="text-xs md:text-sm rounded-full text-gray-900 font-medium bg-gray-200/50 border hover:bg-gray-300/50 py-2.5 px-6 dark:text-white/80 dark:bg-white/10 dark:hover:bg-white/20 dark:border-slate-700">Demo</Link>
                 </div>
             </div>
 

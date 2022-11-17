@@ -33,11 +33,11 @@ const ResponsiveMenu = () => {
                     </Menu.Item>
 
                     <Menu.Item>
-                        <Link href="/" className="w-full block font-semibold hover:bg-gray-50 dark:hover:bg-white/10 px-4 py-1">Get Started</Link>
+                        <Link href="/install" className="w-full block font-semibold hover:bg-gray-50 dark:hover:bg-white/10 px-4 py-1">Get Started</Link>
                     </Menu.Item>
 
                     <Menu.Item>
-                        <Link href="/" className="w-full block font-semibold hover:bg-gray-50 dark:hover:bg-white/10 px-4 py-1">Demo</Link>
+                        <Link href="/demo" className="w-full block font-semibold hover:bg-gray-50 dark:hover:bg-white/10 px-4 py-1">Demo</Link>
                     </Menu.Item>
 
                     <Menu.Item>

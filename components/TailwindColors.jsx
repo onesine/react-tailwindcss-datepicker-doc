@@ -1,6 +1,6 @@
 const TailwindColors = ({changeColor}) => {
     return (
-        <div className="w-full grid grid-cols-6 gap-5">
+        <div className="w-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5">
             <div
                 onClick={() => changeColor("blue")}
                 className="h-10 px-8 text-xs font-medium bg-blue-500 rounded-md flex items-center justify-center text-white cursor-pointer">blue

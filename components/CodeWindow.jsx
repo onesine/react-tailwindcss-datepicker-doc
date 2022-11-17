@@ -78,7 +78,7 @@ export const StringText = ({children}) => (
 
 export const ImportantWord = ({children}) => {
     return (
-        <span className="bg-gray-200 px-2 py-1 rounded-md text-sm text-sky-800 dark:bg-white/20 dark:text-white/70">{children}</span>
+        <span className="bg-gray-200 px-2 py-0.5 md:py-1 rounded-md text-xs md:text-sm text-sky-800 dark:bg-white/20 dark:text-white/70">{children}</span>
     );
 };
 

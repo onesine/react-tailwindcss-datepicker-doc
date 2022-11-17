@@ -14,7 +14,7 @@ const Home = () => {
         <ThemeProvider>
             <Nav/>
 
-            <div className="w-4/5 mx-auto pt-[73px]">
+            <div className="px-2 md:px-0 md:w-4/5 mx-auto pt-[73px]">
                 <HeroSection/>
 
                 <SuperFeatures/>
