@@ -35,7 +35,7 @@ const AdvancedFeatures = () => {
             <p>With the prop <ImportantWord>configs</ImportantWord> you can configure the footer and the shortcuts</p>
             <p>By default this value is <ImportantWord>null</ImportantWord></p>
 
-            <div className="my-7 relative z-30">
+            <div className="my-7">
                 <Datepicker
                     value={config}
                     onChange={(value) => setConfig(value)}
@@ -122,7 +122,7 @@ const AdvancedFeatures = () => {
             <p><Link href="https://github.com/iamkun/dayjs/tree/dev/src/locale" className="text-sky-500 hover:text-sky-600" target="_blank">List of supported locales</Link></p>
             <p className="mt-2">Use the <ImportantWord>i18n</ImportantWord> props to change the language. Default value is <ImportantWord>en</ImportantWord>.</p>
 
-            <div className="my-7 relative z-20">
+            <div className="my-7">
                 <Datepicker
                     i18n={"fr"}
                     value={language}

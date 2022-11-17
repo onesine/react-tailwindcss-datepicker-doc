@@ -32,7 +32,7 @@ const Demo = () => {
         <DocLayout>
             <Title1 id="demo">Demo</Title1>
 
-            <div className="my-7 relative z-20">
+            <div className="my-7">
                 <Datepicker
                     value={value}
                     onChange={handleValueChange}

@@ -67,7 +67,7 @@ const ThemingOptions = () => {
 
             <p>To do this you just need to add the props <ImportantWord>primaryColor</ImportantWord> to your date picker and specify a <ImportantWord>string</ImportantWord> that represents the color.</p>
 
-            <div className="my-7 relative z-20">
+            <div className="my-7">
                 <Datepicker
                     primaryColor={color}
                     value={value}
@@ -134,7 +134,7 @@ const ThemingOptions = () => {
 
             <ToggleTheme/>
 
-            <div className="mt-7 mb-48 relative z-20">
+            <div className="mt-7 mb-48">
                 <Datepicker
                     primaryColor={color}
                     value={secondValue}
