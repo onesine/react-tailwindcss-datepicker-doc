@@ -176,16 +176,16 @@ const AdvancedFeatures = () => {
                                     <Indent>
                                         <Red>shortcuts</Red><LightBlue>:{" {"}</LightBlue>
                                         <Indent>
-                                            <Red>today</Red><LightBlue>:</LightBlue> <StringText>TText</StringText> <br/>
-                                            <Red>yesterday</Red><LightBlue>:</LightBlue> <StringText>YText</StringText> <br/>
-                                            <Red>past</Red><LightBlue>:</LightBlue> <Red>period</Red> <LightBlue>{"=>"} `</LightBlue><StringColor>P-</StringColor>${"{"}period{"}"} <StringColor>Text</StringColor><LightBlue>`</LightBlue> <br/>
-                                            <Red>currentMonth</Red><LightBlue>:</LightBlue> <StringText>CMText</StringText> <br/>
-                                            <Red>pastMonth</Red><LightBlue>:</LightBlue> <StringText>PMText</StringText> <br/>
+                                            <Red>today</Red><LightBlue>:</LightBlue> <StringText>Aujourd{"'"}hui</StringText> <br/>
+                                            <Red>yesterday</Red><LightBlue>:</LightBlue> <StringText>Hier</StringText> <br/>
+                                            <Red>past</Red><LightBlue>:</LightBlue> <Red>period</Red> <LightBlue>{"=>"} `</LightBlue><StringColor>Les </StringColor>${"{"}period{"}"} <StringColor> derniers jours</StringColor><LightBlue>`</LightBlue> <br/>
+                                            <Red>currentMonth</Red><LightBlue>:</LightBlue> <StringText>Ce mois-ci</StringText> <br/>
+                                            <Red>pastMonth</Red><LightBlue>:</LightBlue> <StringText>Le mois dernier</StringText> <br/>
                                         </Indent><LightBlue>{"}"},</LightBlue><br/>
                                         <Red>footer</Red><LightBlue>:{" {"}</LightBlue>
                                         <Indent>
-                                            <Red>cancel</Red><LightBlue>:</LightBlue> <StringText>CText</StringText> <br/>
-                                            <Red>apply</Red><LightBlue>:</LightBlue> <StringText>AText</StringText> <br/>
+                                            <Red>cancel</Red><LightBlue>:</LightBlue> <StringText>Quitter</StringText> <br/>
+                                            <Red>apply</Red><LightBlue>:</LightBlue> <StringText>Appliquer</StringText> <br/>
                                         </Indent><LightBlue>{"}"}</LightBlue>
                                     </Indent>
                                     <LightBlue>{"}}"}</LightBlue> <br/>
