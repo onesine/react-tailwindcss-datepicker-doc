@@ -126,7 +126,9 @@ const AdvancedFeatures = () => {
                 <Datepicker
                     i18n={"fr"}
                     value={language}
-                    onChange={(value) => setLanguage(value)}
+                    onChange={(value) => {
+                        setLanguage(value)
+                    }}
                     configs={{
                         shortcuts: {
                             today: "Aujourd'hui",
