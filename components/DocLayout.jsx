@@ -2,7 +2,7 @@ import Nav from "./Nav";
 import Sidebar from "./Sidebar";
 import ThemeProvider from "./ThemeProvider";
 
-const DocLayout = ({children}) => {
+const DocLayout = ({children, aside}) => {
     return (
         <ThemeProvider>
             <Nav/>
@@ -14,6 +14,7 @@ const DocLayout = ({children}) => {
                     {children}
                 </div>
             </main>
+            {aside}
         </ThemeProvider>
     );
 };

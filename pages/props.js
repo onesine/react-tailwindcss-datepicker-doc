@@ -10,6 +10,7 @@ import CodeWindow, {
     Title1,
     Title2
 } from "../components/CodeWindow";
+import PropsAsideWindow from '../components/AsideWindows/PropsAsideWindow';
 import {NavLink} from "../components/utils";
 import Datepicker from "react-tailwindcss-datepicker";
 
@@ -31,13 +32,15 @@ const Props = () => {
     const [startForm, setStartForm] = useState(defaultValue);
     const [showShortcuts, setShowShortcuts] = useState(defaultValue);
     const [disabled, setDisabled] = useState(defaultValue);
+    const [inputClass, setInputClass] = useState(defaultValue);
+    const [containerClass, setContainerClass] = useState(defaultValue);
 
     const handleDefaultConfigChange = (newValue) => {
         setDefaultConfig(newValue);
     }
 
      return (
-         <DocLayout>
+         <DocLayout aside={<PropsAsideWindow/>}>
              <Title1 id="props">Props</Title1>
 
              <p>All props except <ImportantWord>primaryColor</ImportantWord> that are available for configuring the <ImportantWord>react-tailwindcss-datepicker</ImportantWord>.</p>
@@ -267,7 +270,7 @@ const Props = () => {
 
              <Separator/>
 
-             <Title2 id="placehoder">Placeholder</Title2>
+             <Title2 id="placeholder">Placeholder</Title2>
 
              <p>Use the <ImportantWord>placeholder</ImportantWord> props to change the default <ImportantWord>placeholder</ImportantWord> value.</p>
              <p className="mt-1">By default the value is <ImportantWord>YYYY-MM-DD ~ YYYY-MM-DD</ImportantWord> or <ImportantWord>YYYY-MM-DD</ImportantWord>.</p>
@@ -549,12 +552,125 @@ const Props = () => {
                  <Keyword>export</Keyword> <Keyword>default</Keyword> App;
              </CodeWindow>
 
+            <Separator/>
+
+            <Title2 id="input-class">Input class</Title2>
+            <p>Use the <ImportantWord>inputClassName</ImportantWord> props to override the default <ImportantWord>react-tailwindcss-datepicker</ImportantWord> input classes.</p>
+            {/* <p className="mt-1">By default, the value is <ImportantWord>false</ImportantWord>.</p> */}
+
+            <div className="my-7">
+                <Datepicker
+                    value={range}
+                    inputClassName="font-normal bg-blue-400 placeholder:text-blue-100 text-white dark:bg-blue-900 dark:placeholder:text-blue-100"
+                    onChange={setInputClass}
+                />
+            </div>
+
+            <CodeWindow>
+                <ReactImport/>
+                <InstallDatepicker/>
+                <br/>
+                <Keyword>const</Keyword> App <LightBlue>= () {"=>"} {"{"}</LightBlue> <br/>
+                <Indent>
+                    <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
+                    <Indent>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                    </Indent>
+                    <LightBlue>{"}"});</LightBlue> <br/><br/>
+
+                    <Keyword>const</Keyword> handleValueChange <LightBlue>= (</LightBlue><Red>newValue</Red><LightBlue>) {"=>"} {"{"}</LightBlue>
+                    <Indent>
+                        console<LightBlue>.</LightBlue><FunctionColor>log</FunctionColor><LightBlue>(</LightBlue><StringText>newValue:</StringText><LightBlue>,</LightBlue> <Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                        <FunctionColor>setValue</FunctionColor><LightBlue>(</LightBlue><Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                    </Indent>
+                    <LightBlue>{"}"}</LightBlue> <br/><br/>
+
+                    <Keyword>return</Keyword> (
+                    <Indent>
+                        <Indent>
+                            <LightBlue>{"<"}</LightBlue><Red>Datepicker</Red> <br/>
+                            <Indent>
+                                <Indent>
+                                    <Keyword>inputClassName</Keyword><LightBlue>={"\""}</LightBlue>font-normal bg-green-100 dark:bg-green-900 dark:placeholder:text-green-100<LightBlue>{"\""}</LightBlue> <br/>
+                                    <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
+                                    <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
+                                </Indent>
+                            </Indent>
+                            <LightBlue>/{">"}</LightBlue> <br/>
+                        </Indent>
+                    </Indent>
+                    );
+                </Indent>
+
+                <LightBlue>{"}"};</LightBlue> <br/>
+
+                <Keyword>export</Keyword> <Keyword>default</Keyword> App;
+            </CodeWindow>
+
              <Separator/>
+
+            <Title2 id="container-class">Container class</Title2>
+            <p>Use the <ImportantWord>containerClassName</ImportantWord> props to override the default <ImportantWord>react-tailwindcss-datepicker</ImportantWord> input container classes.</p>
+            {/* <p className="mt-1">By default, the value is <ImportantWord>false</ImportantWord>.</p> */}
+
+            <div className="my-7">
+                <Datepicker
+                    value={range}
+                    containerClassName="my-16"
+                    onChange={setContainerClass}
+                />
+            </div>
+
+            <CodeWindow>
+                <ReactImport/>
+                <InstallDatepicker/>
+                <br/>
+                <Keyword>const</Keyword> App <LightBlue>= () {"=>"} {"{"}</LightBlue> <br/>
+                <Indent>
+                    <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
+                    <Indent>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                    </Indent>
+                    <LightBlue>{"}"});</LightBlue> <br/><br/>
+
+                    <Keyword>const</Keyword> handleValueChange <LightBlue>= (</LightBlue><Red>newValue</Red><LightBlue>) {"=>"} {"{"}</LightBlue>
+                    <Indent>
+                        console<LightBlue>.</LightBlue><FunctionColor>log</FunctionColor><LightBlue>(</LightBlue><StringText>newValue:</StringText><LightBlue>,</LightBlue> <Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                        <FunctionColor>setValue</FunctionColor><LightBlue>(</LightBlue><Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                    </Indent>
+                    <LightBlue>{"}"}</LightBlue> <br/><br/>
+
+                    <Keyword>return</Keyword> (
+                    <Indent>
+                        <Indent>
+                            <LightBlue>{"<"}</LightBlue><Red>Datepicker</Red> <br/>
+                            <Indent>
+                                <Indent>
+                                    <Keyword>containerClassName</Keyword><LightBlue>={"\""}</LightBlue>my-16<LightBlue>{"\""}</LightBlue> <br/>
+                                    <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
+                                    <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
+                                </Indent>
+                            </Indent>
+                            <LightBlue>/{">"}</LightBlue> <br/>
+                        </Indent>
+                    </Indent>
+                    );
+                </Indent>
+
+                <LightBlue>{"}"};</LightBlue> <br/>
+
+                <Keyword>export</Keyword> <Keyword>default</Keyword> App;
+            </CodeWindow>
+
+            <Separator/>
 
              <div className="flex space-x-4">
                  <NavLink href="/theming-options" position="text-start" page={"Previous"}>Theming options</NavLink>
                  <NavLink href="/advanced-features">Advanced features</NavLink>
              </div>
+
          </DocLayout>
      );
 };

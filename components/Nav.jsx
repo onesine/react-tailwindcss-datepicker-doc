@@ -9,7 +9,7 @@ const Nav = () => {
     const router = useRouter();
     const links = [
         {
-            text: "home",
+            text: "Home",
             url: "/"
         },
         {
@@ -37,7 +37,7 @@ const Nav = () => {
                     </div>
 
                     <div className="hidden md:block">
-                        <span className="text-xs bg-gray-100 dark:text-white/50 dark:bg-slate-600 dark:border-slate-500 font-semibold text-gray-500 border rounded-full px-2 py-0.5">1.0.0</span>
+                        <span className="text-xs bg-gray-100 dark:text-white/50 dark:bg-slate-600 dark:border-slate-500 font-semibold text-gray-500 border rounded-full px-2 py-0.5">1.2.0</span>
                     </div>
                 </div>
             </Link>

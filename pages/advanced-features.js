@@ -12,6 +12,7 @@ import CodeWindow, {
     Title2
 } from "../components/CodeWindow";
 import {NavLink} from "../components/utils";
+import AdvancedFeaturesAside from "../components/AsideWindows/AdvancedFeaturesAside";
 
 const AdvancedFeatures = () => {
     useEffect(() => {
@@ -23,7 +24,7 @@ const AdvancedFeatures = () => {
     const [language, setLanguage] = useState(defaultValue);
 
     return (
-        <DocLayout>
+        <DocLayout aside={<AdvancedFeaturesAside />}>
             <Title1 id="advanced-features">Advanced Features</Title1>
 
             <p>You can also access advanced features, such as applying a different language or customizing your shortcuts.</p>
