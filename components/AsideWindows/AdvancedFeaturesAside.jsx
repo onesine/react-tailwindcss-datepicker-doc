@@ -12,19 +12,7 @@ const AdvancedFeaturesAside = () => {
             {
                 text: "Localization (i18n)",
                 url: "#localization"
-            },
-            {
-                text: "Example",
-                url: "#fuchsia-example"
-            },
-            {
-                text: "Light Mode",
-                url: "#light-mode"
-            },
-            {
-                text: "Dark Mode",
-                url: "#dark-mode"
-            },
+            }
         ],
     }
     return (
