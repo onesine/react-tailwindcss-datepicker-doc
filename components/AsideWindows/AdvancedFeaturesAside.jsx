@@ -39,7 +39,8 @@ const AdvancedFeaturesAside = () => {
                 </div>
                 
             </div>
-                <div className="transition-all duration-300 lg:duration-[0s] bg-gradient-to-b from-transparent via-zinc-50/20 to-zinc-70 dark:via-slate-900/70 dark:to-slate-900 h-16 fixed w-0 xl:w-[272px] bottom-0 right-0 z-10">
+
+            <div className="transition-all duration-300 lg:duration-[0s] bg-gradient-to-b from-transparent via-zinc-50/20 to-zinc-70 dark:via-slate-900/70 dark:to-slate-900 h-16 fixed w-0 xl:w-[272px] bottom-0 right-0 z-10">
 
                 </div>
                 <div className="transition-all duration-300 lg:duration-[0s] bg-gradient-to-t from-transparent via-zinc-50/20 to-zinc-70 dark:via-slate-900/70 dark:to-slate-900 h-32 fixed w-0 xl:w-[272px] top-0 right-0 z-10">
