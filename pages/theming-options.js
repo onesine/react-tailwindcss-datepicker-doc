@@ -15,7 +15,7 @@ import {NavLink} from "../components/utils";
 import TailwindColors from "../components/TailwindColors";
 import Datepicker from "react-tailwindcss-datepicker";
 import ToggleTheme from "../components/ToggleTheme";
-import ThemingOptionAsideWindow from '../components/AsideWindows/ThemingOptionAsideWindow'
+import AsideWindow from "../components/AsideWindow";
 
 const ThemingOptions = () => {
     useEffect(() => {
@@ -42,8 +42,29 @@ const ThemingOptions = () => {
         setSecondValue(newValue);
     };
 
+    const links = {
+        "On this page": [
+            {
+                text: "Tailwind colors supported",
+                url: "#tailwind-colors"
+            },
+            {
+                text: "Example",
+                url: "#fuchsia-example"
+            },
+            {
+                text: "Light Mode",
+                url: "#light-mode"
+            },
+            {
+                text: "Dark Mode",
+                url: "#dark-mode"
+            },
+        ],
+    }
+
     return (
-        <DocLayout aside={<ThemingOptionAsideWindow />}>
+        <DocLayout aside={ <AsideWindow links={links}/> }>
             <Title1 id="theming-options">Theming options</Title1>
 
             <p className="mb-3">React Tailwindcss Datepicker uses the Tailwindcss colors to propose several themes. You can change the theme of your datepicker from a props. React Tailwindcss Datepicker also supports dark mode.</p>

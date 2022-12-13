@@ -10,9 +10,9 @@ import CodeWindow, {
     Title1,
     Title2
 } from "../components/CodeWindow";
-import PropsAsideWindow from '../components/AsideWindows/PropsAsideWindow';
 import {NavLink} from "../components/utils";
 import Datepicker from "react-tailwindcss-datepicker";
+import AsideWindow from "../components/AsideWindow";
 
 const Props = () => {
     useEffect(() => {
@@ -20,6 +20,54 @@ const Props = () => {
     }, [])
 
     const defaultValue = {startDate: null, endDate: null};
+    const links = {
+        "On this page": [
+            {
+                text: "Default Configuration",
+                url: "#default-configuration"
+            },
+            {
+                text: "Single Date",
+                url: "#single-date"
+            },
+            {
+                text: "Use Range",
+                url: "#use-range"
+            },
+            {
+                text: "Single Date & Use Range",
+                url: "#single-date&use-range"
+            },
+            {
+                text: "Placeholder",
+                url: "#placeholder"
+            },
+            {
+                text: "Separator",
+                url: "#separator"
+            },
+            {
+                text: "Start From",
+                url: "#start-from"
+            },
+            {
+                text: "Show Shortcuts & Show Footer",
+                url: "#shortcuts-footer"
+            },
+            {
+                text: "Disabled",
+                url: "#disabled"
+            },
+            {
+                text: "Input class",
+                url: "#input-class"
+            },
+            {
+                text: "Container class",
+                url: "#container-class"
+            },
+        ],
+    };
 
     const [defaultConfig, setDefaultConfig] = useState(defaultValue);
 
@@ -40,7 +88,7 @@ const Props = () => {
     }
 
      return (
-         <DocLayout aside={<PropsAsideWindow/>}>
+         <DocLayout aside={ <AsideWindow links={links}/> }>
              <Title1 id="props">Props</Title1>
 
              <p>All props except <ImportantWord>primaryColor</ImportantWord> that are available for configuring the <ImportantWord>react-tailwindcss-datepicker</ImportantWord>.</p>
@@ -560,7 +608,7 @@ const Props = () => {
 
             <div className="my-7">
                 <Datepicker
-                    value={range}
+                    value={inputClass}
                     inputClassName="font-normal bg-blue-400 placeholder:text-blue-100 text-white dark:bg-blue-900 dark:placeholder:text-blue-100"
                     onChange={setInputClass}
                 />
@@ -616,7 +664,7 @@ const Props = () => {
 
             <div className="my-7">
                 <Datepicker
-                    value={range}
+                    value={containerClass}
                     containerClassName="my-16"
                     onChange={setContainerClass}
                 />

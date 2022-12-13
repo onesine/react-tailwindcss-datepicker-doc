@@ -11,14 +11,36 @@ import CodeWindow, {
     StringColor, InstallDatepicker, ReactImport, Coma, Keyword, FunctionColor, StringText
 } from "../components/CodeWindow";
 import {NavLink} from "../components/utils";
+import AsideWindow from "../components/AsideWindow";
 
 const Install = () => {
     useEffect(() => {
         document.title = "Installation";
-    }, [])
+    }, []);
+
+    const links = {
+        "On this page": [
+            {
+                text: "Installation",
+                url: "#install"
+            },
+            {
+                text: "Install via npm",
+                url: "#npm-install"
+            },
+            {
+                text: "Install via yarn",
+                url: "#yarn-install"
+            },
+            {
+                text: "Simple usage",
+                url: "#simple-usage"
+            },
+        ],
+    };
 
     return (
-        <DocLayout>
+        <DocLayout aside={ <AsideWindow links={links}/> }>
             <Title1 id="install">Installation</Title1>
 
             <div className="bg-amber-50/50 text-sm rounded-md border border-amber-300 p-4 text-amber-900/70 dark:border-amber-300/30 dark:text-amber-400 dark:bg-amber-400/10">

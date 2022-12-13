@@ -11,7 +11,7 @@ export default function Document() {
     }, []);
 
     return (
-        <Html className="scroll-smooth">
+        <Html className="scroll-smooth scroll-pt-[85px]">
             <Head />
             <body className="antialiased text-gray-800 dark:text-white dark:bg-slate-900">
                 <Main />

@@ -12,11 +12,12 @@ import CodeWindow, {
     Title1
 } from "../components/CodeWindow";
 import {NavLink} from "../components/utils";
+import AsideWindow from "../components/AsideWindow";
 
 const Demo = () => {
     useEffect(() => {
         document.title = "Demo";
-    }, [])
+    }, []);
 
     const [value, setValue] = useState({
         startDate: null,
@@ -25,11 +26,20 @@ const Demo = () => {
 
     const handleValueChange = (newValue) => {
         setValue(newValue);
-    }
+    };
+
+    const links = {
+        "On this page": [
+            {
+                text: "Demo",
+                url: "#demo"
+            }
+        ],
+    };
 
 
     return (
-        <DocLayout>
+        <DocLayout aside={ <AsideWindow links={links}/> }>
             <Title1 id="demo">Demo</Title1>
 
             <div className="my-7">

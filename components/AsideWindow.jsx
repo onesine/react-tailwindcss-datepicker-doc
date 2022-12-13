@@ -1,57 +1,9 @@
 import {useRouter} from "next/router";
 import {useEffect, useRef} from "react";
 
-const PropsAsideWindow = () => {
+const AsideWindow = ({links = []}) => {
     const verticalDashRef = useRef(null);
     const router = useRouter();
-    const links = {
-        "On this page": [
-            {
-                text: "Default Configuration",
-                url: "#default-configuration"
-            },
-            {
-                text: "Single Date",
-                url: "#single-date"
-            },
-            {
-                text: "Use Range",
-                url: "#use-range"
-            },
-            {
-                text: "Single Date & Use Range",
-                url: "#single-date&use-range"
-            },
-            {
-                text: "Placeholder",
-                url: "#placeholder"
-            },
-            {
-                text: "Separator",
-                url: "#separator"
-            },
-            {
-                text: "Start From",
-                url: "#start-from"
-            },
-            {
-                text: "Show Shortcuts & Show Footer",
-                url: "#shortcuts-footer"
-            },
-            {
-                text: "Disabled",
-                url: "#disabled"
-            },
-            {
-                text: "Input class",
-                url: "#input-class"
-            },
-            {
-                text: "Container class",
-                url: "#container-class"
-            },
-        ],
-    };
 
     useEffect(() => {
         const dash = verticalDashRef?.current;
@@ -127,4 +79,4 @@ const PropsAsideWindow = () => {
     );
 };
 
-export default PropsAsideWindow;
+export default AsideWindow;

@@ -12,7 +12,7 @@ import CodeWindow, {
     Title2
 } from "../components/CodeWindow";
 import {NavLink} from "../components/utils";
-import AdvancedFeaturesAside from "../components/AsideWindows/AdvancedFeaturesAside";
+import AsideWindow from "../components/AsideWindow";
 
 const AdvancedFeatures = () => {
     useEffect(() => {
@@ -23,8 +23,21 @@ const AdvancedFeatures = () => {
     const [config, setConfig] = useState(defaultValue);
     const [language, setLanguage] = useState(defaultValue);
 
+    const links = {
+        "On this page": [
+            {
+                text: "Configs Shortcuts & Footer",
+                url: "#configs"
+            },
+            {
+                text: "Localization (i18n)",
+                url: "#localization"
+            }
+        ],
+    }
+
     return (
-        <DocLayout aside={<AdvancedFeaturesAside />}>
+        <DocLayout aside={ <AsideWindow links={links}/> }>
             <Title1 id="advanced-features">Advanced Features</Title1>
 
             <p>You can also access advanced features, such as applying a different language or customizing your shortcuts.</p>
