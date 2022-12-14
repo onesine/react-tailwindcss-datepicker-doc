@@ -80,7 +80,7 @@ const ThemingOptions = () => {
             <div className="bg-blue-50/50 text-sm rounded-md border border-blue-300 p-4 text-blue-900/70 dark:border-blue-300/30 dark:text-blue-400 dark:bg-blue-400/10">
                 <h4 className="font-bold uppercase mb-3">Info</h4>
 
-                <p>⚠️ If you want to try a theme proposed by one of these colors. You can click disappointed to automatically change the theme of react-tailwindcss-datepicker on this page.</p>
+                <p>⚠️ The colors are clickable. So you can click on one of them to try the corresponding theme. This will change the theme of the date pickers on this page.</p>
             </div>
 
             <Separator/>
