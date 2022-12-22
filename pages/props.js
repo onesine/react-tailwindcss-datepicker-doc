@@ -55,6 +55,14 @@ const Props = () => {
                 url: "#shortcuts-footer"
             },
             {
+                text: "Display Format",
+                url: "#displayFormat"
+            },
+            {
+                text: "Read Only",
+                url: "#readOnly"
+            },
+            {
                 text: "Disabled",
                 url: "#disabled"
             },
