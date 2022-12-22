@@ -546,6 +546,62 @@ const Props = () => {
 
              <Separator/>
 
+             <Title2 id="displayFormat">Display Format</Title2>
+             <p>Use the <ImportantWord>displayFormat</ImportantWord> props to change the date display format.</p>
+             <p className="mt-1">By default, the value is <ImportantWord>YYYY-MM-DD</ImportantWord>.</p>
+
+             <div className="my-7">
+                 <Datepicker
+                     value={disabled}
+                     onChange={value => setDisabled(value)}
+                     displayFormat="DD/MM/YYYY"
+                 />
+             </div>
+
+             <CodeWindow>
+                 <ReactImport/>
+                 <InstallDatepicker/>
+                 <br/>
+                 <Keyword>const</Keyword> App <LightBlue>= () {"=>"} {"{"}</LightBlue> <br/>
+                 <Indent>
+                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
+                     <Indent>
+                         <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                     </Indent>
+                     <LightBlue>{"}"});</LightBlue> <br/><br/>
+
+                     <Keyword>const</Keyword> handleValueChange <LightBlue>= (</LightBlue><Red>newValue</Red><LightBlue>) {"=>"} {"{"}</LightBlue>
+                     <Indent>
+                         console<LightBlue>.</LightBlue><FunctionColor>log</FunctionColor><LightBlue>(</LightBlue><StringText>newValue:</StringText><LightBlue>,</LightBlue> <Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                         <FunctionColor>setValue</FunctionColor><LightBlue>(</LightBlue><Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                     </Indent>
+                     <LightBlue>{"}"}</LightBlue> <br/><br/>
+
+                     <Keyword>return</Keyword> (
+                     <Indent>
+                         <Indent>
+                             <LightBlue>{"<"}</LightBlue><Red>Datepicker</Red> <br/>
+                             <Indent>
+                                 <Indent>
+                                     <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
+                                     <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
+                                     <Keyword>displayFormat</Keyword><LightBlue>={"{"}</LightBlue><StringText>DD/MM/YYYY</StringText><LightBlue>{"}"}</LightBlue> <br/>
+                                 </Indent>
+                             </Indent>
+                             <LightBlue>/{">"}</LightBlue> <br/>
+                         </Indent>
+                     </Indent>
+                     );
+                 </Indent>
+
+                 <LightBlue>{"}"};</LightBlue> <br/>
+
+                 <Keyword>export</Keyword> <Keyword>default</Keyword> App;
+             </CodeWindow>
+
+             <Separator/>
+
              <Title2 id="disabled">Disabled</Title2>
              <p>Use the <ImportantWord>disabled</ImportantWord> props to disable the <ImportantWord>react-tailwindcss-select</ImportantWord> field.</p>
              <p className="mt-1">By default, the value is <ImportantWord>false</ImportantWord>.</p>
