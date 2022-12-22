@@ -82,6 +82,8 @@ const Props = () => {
     const [disabled, setDisabled] = useState(defaultValue);
     const [inputClass, setInputClass] = useState(defaultValue);
     const [containerClass, setContainerClass] = useState(defaultValue);
+    const [readOnly, setReadOnly] = useState(defaultValue);
+    const [displayFormat, setDisplayFormat] = useState(defaultValue);
 
     const handleDefaultConfigChange = (newValue) => {
         setDefaultConfig(newValue);
@@ -552,8 +554,8 @@ const Props = () => {
 
              <div className="my-7">
                  <Datepicker
-                     value={disabled}
-                     onChange={value => setDisabled(value)}
+                     value={displayFormat}
+                     onChange={value => setDisplayFormat(value)}
                      displayFormat="DD/MM/YYYY"
                  />
              </div>
@@ -587,6 +589,62 @@ const Props = () => {
                                      <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
                                      <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
                                      <Keyword>displayFormat</Keyword><LightBlue>={"{"}</LightBlue><StringText>DD/MM/YYYY</StringText><LightBlue>{"}"}</LightBlue> <br/>
+                                 </Indent>
+                             </Indent>
+                             <LightBlue>/{">"}</LightBlue> <br/>
+                         </Indent>
+                     </Indent>
+                     );
+                 </Indent>
+
+                 <LightBlue>{"}"};</LightBlue> <br/>
+
+                 <Keyword>export</Keyword> <Keyword>default</Keyword> App;
+             </CodeWindow>
+
+             <Separator/>
+
+             <Title2 id="readOnly">Read Only</Title2>
+             <p>Use the <ImportantWord>readOnly</ImportantWord> props to prevent editing the text field.</p>
+             <p className="mt-1">By default, the value is <ImportantWord>false</ImportantWord>.</p>
+
+             <div className="my-7">
+                 <Datepicker
+                     value={readOnly}
+                     onChange={value => setReadOnly(value)}
+                     readOnly={true}
+                 />
+             </div>
+
+             <CodeWindow>
+                 <ReactImport/>
+                 <InstallDatepicker/>
+                 <br/>
+                 <Keyword>const</Keyword> App <LightBlue>= () {"=>"} {"{"}</LightBlue> <br/>
+                 <Indent>
+                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
+                     <Indent>
+                         <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                     </Indent>
+                     <LightBlue>{"}"});</LightBlue> <br/><br/>
+
+                     <Keyword>const</Keyword> handleValueChange <LightBlue>= (</LightBlue><Red>newValue</Red><LightBlue>) {"=>"} {"{"}</LightBlue>
+                     <Indent>
+                         console<LightBlue>.</LightBlue><FunctionColor>log</FunctionColor><LightBlue>(</LightBlue><StringText>newValue:</StringText><LightBlue>,</LightBlue> <Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                         <FunctionColor>setValue</FunctionColor><LightBlue>(</LightBlue><Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                     </Indent>
+                     <LightBlue>{"}"}</LightBlue> <br/><br/>
+
+                     <Keyword>return</Keyword> (
+                     <Indent>
+                         <Indent>
+                             <LightBlue>{"<"}</LightBlue><Red>Datepicker</Red> <br/>
+                             <Indent>
+                                 <Indent>
+                                     <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
+                                     <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
+                                     <Keyword>readOnly</Keyword><LightBlue>={"{"}</LightBlue>true<LightBlue>{"}"}</LightBlue> <br/>
                                  </Indent>
                              </Indent>
                              <LightBlue>/{">"}</LightBlue> <br/>
