@@ -10,4 +10,14 @@ export const NavLink = ({children, href, position = "text-end", page = "Next"}) 
         <span className="block text-xs font-medium text-gray-500">{page} page</span>
         <span className="block text-sm text-sky-500 mt-1">{children}</span>
     </Link>
-)
+);
+
+export const AlertWarning = ({title = "Warning", children}) => {
+    return (
+        <div className="bg-amber-50/50 text-sm rounded-md border border-amber-300 p-4 text-amber-900/70 dark:border-amber-300/30 dark:text-amber-400 dark:bg-amber-400/10">
+            <h4 className="font-bold uppercase mb-3">{title}</h4>
+
+            <p>{children}</p>
+        </div>
+    );
+};

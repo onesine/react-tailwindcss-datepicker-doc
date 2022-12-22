@@ -10,7 +10,7 @@ import CodeWindow, {
     Title1,
     Title2
 } from "../components/CodeWindow";
-import {NavLink} from "../components/utils";
+import {AlertWarning, NavLink} from "../components/utils";
 import Datepicker from "react-tailwindcss-datepicker";
 import AsideWindow from "../components/AsideWindow";
 
@@ -558,7 +558,11 @@ const Props = () => {
 
              <Title2 id="displayFormat">Display Format</Title2>
              <p>Use the <ImportantWord>displayFormat</ImportantWord> props to change the date display format.</p>
-             <p className="mt-1">By default, the value is <ImportantWord>YYYY-MM-DD</ImportantWord>.</p>
+             <p className="mt-1 mb-3">By default, the value is <ImportantWord>YYYY-MM-DD</ImportantWord>.</p>
+
+             <AlertWarning>
+                 ⚠️ Editing the text field to change the date range only supports the YYYY-MM-DD format at this time.
+             </AlertWarning>
 
              <div className="my-7">
                  <Datepicker

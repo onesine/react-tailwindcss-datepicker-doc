@@ -10,7 +10,7 @@ import CodeWindow, {
     Indent,
     StringColor, InstallDatepicker, ReactImport, Coma, Keyword, FunctionColor, StringText
 } from "../components/CodeWindow";
-import {NavLink} from "../components/utils";
+import {AlertWarning, NavLink} from "../components/utils";
 import AsideWindow from "../components/AsideWindow";
 
 const Install = () => {
@@ -43,11 +43,9 @@ const Install = () => {
         <DocLayout aside={ <AsideWindow links={links}/> }>
             <Title1 id="install">Installation</Title1>
 
-            <div className="bg-amber-50/50 text-sm rounded-md border border-amber-300 p-4 text-amber-900/70 dark:border-amber-300/30 dark:text-amber-400 dark:bg-amber-400/10">
-                <h4 className="font-bold uppercase mb-3">Warning</h4>
-
-                <p>⚠️ React Tailwindcss Datepicker uses Tailwind CSS 3 (with the @tailwindcss/forms plugin) & Dayjs under the hood to work.</p>
-            </div>
+            <AlertWarning>
+                ⚠️ React Tailwindcss Datepicker uses Tailwind CSS 3 (with the @tailwindcss/forms plugin) & Dayjs under the hood to work.
+            </AlertWarning>
 
             <Separator/>
 
