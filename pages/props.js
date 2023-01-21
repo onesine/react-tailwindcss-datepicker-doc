@@ -74,6 +74,15 @@ const Props = () => {
                 text: "Container class",
                 url: "#container-class"
             },
+            {
+                text: "Toggle class",
+                url: "#toggle-class"
+            },
+            {
+                text: "Min Date and Max Date",
+                url: "#min-date-and-max-date"
+            },
+
         ],
     };
 
@@ -92,6 +101,8 @@ const Props = () => {
     const [containerClass, setContainerClass] = useState(defaultValue);
     const [readOnly, setReadOnly] = useState(defaultValue);
     const [displayFormat, setDisplayFormat] = useState(defaultValue);
+    const [toggleClassNameValue, setToggleClassNameValue] = useState(defaultValue);
+    const [minMaxValue, setMinMaxValue] = useState(defaultValue);
 
     const handleDefaultConfigChange = (newValue) => {
         setDefaultConfig(newValue);
@@ -837,6 +848,124 @@ const Props = () => {
 
                 <Keyword>export</Keyword> <Keyword>default</Keyword> App;
             </CodeWindow>
+
+            <Separator/>
+
+
+            <Title2 id="toggle-class">Toggle class</Title2>
+            <p>Use the <ImportantWord>toggleClassName</ImportantWord> props to override the default <ImportantWord>react-tailwindcss-datepicker</ImportantWord> toggle button classes.</p>
+            {/* <p className="mt-1">By default, the value is <ImportantWord>false</ImportantWord>.</p> */}
+
+            <div className="my-7">
+                <Datepicker
+                    value={toggleClassNameValue}
+                    toggleClassName="rounded-r-lg bg-opacity-40 bg-gray-400 hover:bg-blue-800 hover:bg-opacity-60 transition-all duration-150 ease-in-out"
+                    onChange={setToggleClassNameValue}
+                />
+            </div>
+
+            <CodeWindow>
+                <ReactImport/>
+                <InstallDatepicker/>
+                <br/>
+                <Keyword>const</Keyword> App <LightBlue>= () {"=>"} {"{"}</LightBlue> <br/>
+                <Indent>
+                    <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
+                    <Indent>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                    </Indent>
+                    <LightBlue>{"}"});</LightBlue> <br/><br/>
+
+                    <Keyword>const</Keyword> handleValueChange <LightBlue>= (</LightBlue><Red>newValue</Red><LightBlue>) {"=>"} {"{"}</LightBlue>
+                    <Indent>
+                        console<LightBlue>.</LightBlue><FunctionColor>log</FunctionColor><LightBlue>(</LightBlue><StringText>newValue:</StringText><LightBlue>,</LightBlue> <Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                        <FunctionColor>setValue</FunctionColor><LightBlue>(</LightBlue><Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                    </Indent>
+                    <LightBlue>{"}"}</LightBlue> <br/><br/>
+
+                    <Keyword>return</Keyword> (
+                    <Indent>
+                        <Indent>
+                            <LightBlue>{"<"}</LightBlue><Red>Datepicker</Red> <br/>
+                            <Indent>
+                                <Indent>
+                                    <Keyword>toggleClassName</Keyword><LightBlue>={"\""}</LightBlue>rounded-r-lg bg-opacity-40 bg-gray-400 hover:bg-blue-800 hover:bg-opacity-60 transition-all duration-150 ease-in-out<LightBlue>{"\""}</LightBlue> <br/>
+                                    <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
+                                    <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
+                                </Indent>
+                            </Indent>
+                            <LightBlue>/{">"}</LightBlue> <br/>
+                        </Indent>
+                    </Indent>
+                    );
+                </Indent>
+
+                <LightBlue>{"}"};</LightBlue> <br/>
+
+                <Keyword>export</Keyword> <Keyword>default</Keyword> App;
+            </CodeWindow>
+
+            <Separator/>
+
+
+            <Title2 id="min-date-and-max-date">Min Date and Max Date</Title2>
+            <p>Use the <ImportantWord>minDate</ImportantWord> and <ImportantWord>maxDate</ImportantWord> props to set range of enabled dates in between these dates.</p>
+
+            <div className="my-7">
+                <Datepicker
+                    value={minMaxValue}
+                    minDate={new Date('2023-01-05')}
+                    maxDate={new Date('2023-01-30')}
+                    startFrom="2023-01-01"
+                    onChange={setMinMaxValue}
+                />
+            </div>
+
+            <CodeWindow>
+                <ReactImport/>
+                <InstallDatepicker/>
+                <br/>
+                <Keyword>const</Keyword> App <LightBlue>= () {"=>"} {"{"}</LightBlue> <br/>
+                <Indent>
+                    <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
+                    <Indent>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                    </Indent>
+                    <LightBlue>{"}"});</LightBlue> <br/><br/>
+
+                    <Keyword>const</Keyword> handleValueChange <LightBlue>= (</LightBlue><Red>newValue</Red><LightBlue>) {"=>"} {"{"}</LightBlue>
+                    <Indent>
+                        console<LightBlue>.</LightBlue><FunctionColor>log</FunctionColor><LightBlue>(</LightBlue><StringText>newValue:</StringText><LightBlue>,</LightBlue> <Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                        <FunctionColor>setValue</FunctionColor><LightBlue>(</LightBlue><Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                    </Indent>
+                    <LightBlue>{"}"}</LightBlue> <br/><br/>
+
+                    <Keyword>return</Keyword> (
+                    <Indent>
+                        <Indent>
+                            <LightBlue>{"<"}</LightBlue><Red>Datepicker</Red> <br/>
+                            <Indent>
+                                <Indent>
+                                    <Keyword>minDate</Keyword><LightBlue>={"{"}</LightBlue><FunctionColor>new</FunctionColor> <Red>Date</Red>{`(`}<LightBlue>{"\""}</LightBlue>2023-01-05<LightBlue>{"\""}</LightBlue>{`)`}<LightBlue>{"}"}</LightBlue> <br/>
+                                    <Keyword>maxDate</Keyword><LightBlue>={"{"}</LightBlue><FunctionColor>new</FunctionColor> <Red>Date</Red>{`(`}<LightBlue>{"\""}</LightBlue>2023-01-30<LightBlue>{"\""}</LightBlue>{`)`}<LightBlue>{"}"}</LightBlue> <br/>
+                                    <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
+                                    <Keyword>startFrom</Keyword><LightBlue>={"\""}</LightBlue>2023-01-01<LightBlue>{"\""}</LightBlue> <br/>
+                                    <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
+                                </Indent>
+                            </Indent>
+                            <LightBlue>/{">"}</LightBlue> <br/>
+                        </Indent>
+                    </Indent>
+                    );
+                </Indent>
+
+                <LightBlue>{"}"};</LightBlue> <br/>
+
+                <Keyword>export</Keyword> <Keyword>default</Keyword> App;
+            </CodeWindow>
+
 
             <Separator/>
 

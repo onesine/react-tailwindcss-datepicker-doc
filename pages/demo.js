@@ -24,7 +24,7 @@ const Demo = () => {
         endDate: null
     });
 
-    const handleValueChange = (newValue) => {
+    const handleValueChange = (newValue, e) => {
         setValue(newValue);
     };
 

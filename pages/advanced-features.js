@@ -22,6 +22,7 @@ const AdvancedFeatures = () => {
     const defaultValue = {startDate: null, endDate: null};
     const [config, setConfig] = useState(defaultValue);
     const [language, setLanguage] = useState(defaultValue);
+    const [disabledDatesValue, setDisableDatesValue] = useState(defaultValue);
 
     const links = {
         "On this page": [
@@ -32,7 +33,15 @@ const AdvancedFeatures = () => {
             {
                 text: "Localization (i18n)",
                 url: "#localization"
-            }
+            },
+            {
+                text: "Start Week On",
+                url: "#start-week-on"
+            },
+            {
+                text: "Disabled Dates",
+                url: "#disabled-dates"
+            },
         ],
     }
 
@@ -205,6 +214,149 @@ const AdvancedFeatures = () => {
                                         </Indent><LightBlue>{"}"}</LightBlue>
                                     </Indent>
                                     <LightBlue>{"}}"}</LightBlue> <br/>
+                                    <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
+                                    <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
+                                </Indent>
+                            </Indent>
+                            <LightBlue>/{">"}</LightBlue> <br/>
+                        </Indent>
+                    </Indent>
+                    );
+                </Indent>
+
+                <LightBlue>{"}"};</LightBlue> <br/>
+
+                <Keyword>export</Keyword> <Keyword>default</Keyword> App;
+            </CodeWindow>
+
+            <Separator/>
+
+
+            <Title2 id="start-week-on">Start Week On</Title2>
+            <p>Use the <ImportantWord>startWeekOn</ImportantWord> props to override the default <ImportantWord>react-tailwindcss-datepicker</ImportantWord> start day of the week.</p>
+            <p className="mt-4">Select from <ImportantWord>sun</ImportantWord>, <ImportantWord>mon</ImportantWord>, <ImportantWord>tue</ImportantWord>, <ImportantWord>wed</ImportantWord>, <ImportantWord>thu</ImportantWord>, <ImportantWord>fri</ImportantWord>, or  <ImportantWord>sat</ImportantWord>,</p>
+            {/* <p className="mt-1">By default, the value is <ImportantWord>false</ImportantWord>.</p> */}
+
+            <div className="my-7">
+                <Datepicker
+                    value={defaultValue}
+                    startWeekOn="mon"
+                    onChange={setDisableDatesValue}
+                />
+            </div>
+
+            <CodeWindow>
+                <ReactImport/>
+                <InstallDatepicker/>
+                <br/>
+                <Keyword>const</Keyword> App <LightBlue>= () {"=>"} {"{"}</LightBlue> <br/>
+                <Indent>
+                    <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
+                    <Indent>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                    </Indent>
+                    <LightBlue>{"}"});</LightBlue> <br/><br/>
+
+                    <Keyword>const</Keyword> handleValueChange <LightBlue>= (</LightBlue><Red>newValue</Red><LightBlue>) {"=>"} {"{"}</LightBlue>
+                    <Indent>
+                        console<LightBlue>.</LightBlue><FunctionColor>log</FunctionColor><LightBlue>(</LightBlue><StringText>newValue:</StringText><LightBlue>,</LightBlue> <Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                        <FunctionColor>setValue</FunctionColor><LightBlue>(</LightBlue><Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                    </Indent>
+                    <LightBlue>{"}"}</LightBlue> <br/><br/>
+
+                    <Keyword>return</Keyword> (
+                    <Indent>
+                        <Indent>
+                            <LightBlue>{"<"}</LightBlue><Red>Datepicker</Red> <br/>
+                            <Indent>
+                                <Indent>
+                                    <Keyword>startWeekOn</Keyword><LightBlue>={"\""}</LightBlue>mon<LightBlue>{"\""}</LightBlue> <br/>
+                                    <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
+                                    <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
+                                </Indent>
+                            </Indent>
+                            <LightBlue>/{">"}</LightBlue> <br/>
+                        </Indent>
+                    </Indent>
+                    );
+                </Indent>
+
+                <LightBlue>{"}"};</LightBlue> <br/>
+
+                <Keyword>export</Keyword> <Keyword>default</Keyword> App;
+            </CodeWindow>
+
+            <Separator/>
+
+
+            <Title2 id="disabled-dates">Disabled Dates</Title2>
+            <p>Use the <ImportantWord>disabledDates</ImportantWord> to disable set specific date range or group of date range.</p>
+            {/* <p className="mt-1">By default, the value is <ImportantWord>false</ImportantWord>.</p> */}
+
+            <div className="my-7">
+                <Datepicker
+                    value={disabledDatesValue}
+                    onChange={setDisableDatesValue}
+                    disabledDates={[
+                        {
+                            startDate: '2023-02-02',
+                            endDate: '2023-02-05'
+                        },
+                        {
+                            startDate: '2023-02-11',
+                            endDate: '2023-02-12'
+                        },
+                    ]}
+                    startFrom="2023-02-02"
+                />
+            </div>
+
+            <CodeWindow>
+                <ReactImport/>
+                <InstallDatepicker/>
+                <br/>
+                <Keyword>const</Keyword> App <LightBlue>= () {"=>"} {"{"}</LightBlue> <br/>
+                <Indent>
+                    <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
+                    <Indent>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                    </Indent>
+                    <LightBlue>{"}"});</LightBlue> <br/><br/>
+
+                    <Keyword>const</Keyword> handleValueChange <LightBlue>= (</LightBlue><Red>newValue</Red><LightBlue>) {"=>"} {"{"}</LightBlue>
+                    <Indent>
+                        console<LightBlue>.</LightBlue><FunctionColor>log</FunctionColor><LightBlue>(</LightBlue><StringText>newValue:</StringText><LightBlue>,</LightBlue> <Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                        <FunctionColor>setValue</FunctionColor><LightBlue>(</LightBlue><Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                    </Indent>
+                    <LightBlue>{"}"}</LightBlue> <br/><br/>
+
+                    <Keyword>return</Keyword> (
+                    <Indent>
+                        <Indent>
+                            <LightBlue>{"<"}</LightBlue><Red>Datepicker</Red> <br/>
+                            <Indent>
+                                <Indent>
+                                    <Keyword>disabledDates</Keyword>
+                                    <LightBlue>={"{"}</LightBlue><Red>{"["}</Red><br/>
+                                        <Indent>
+                                            <LightBlue>{"{"}</LightBlue><br/>
+                                                <Indent>
+                                                    <Keyword>startDate</Keyword>: <LightBlue>{"\""}</LightBlue>2023-02-02<LightBlue>{"\""}</LightBlue>,<br/>
+                                                    <Keyword>endDate</Keyword>: <LightBlue>{"\""}</LightBlue>2023-02-05<LightBlue>{"\""}</LightBlue>,<br/>
+                                                </Indent>
+                                            <LightBlue>{"}"}</LightBlue>,<br/>
+
+                                            <LightBlue>{"{"}</LightBlue><br/>
+                                                <Indent>
+                                                    <Keyword>startDate</Keyword>: <LightBlue>{"\""}</LightBlue>2023-02-11<LightBlue>{"\""}</LightBlue>,<br/>
+                                                    <Keyword>endDate</Keyword>: <LightBlue>{"\""}</LightBlue>2023-02-12<LightBlue>{"\""}</LightBlue>,<br/>
+                                                </Indent>
+                                            <LightBlue>{"}"}</LightBlue>,
+                                        </Indent>
+                                    <Red>{"]"}</Red><LightBlue>{"}"}</LightBlue> <br/>
+                                    <Keyword>startFrom</Keyword><LightBlue>={"\""}</LightBlue>2023-02-02<LightBlue>{"\""}</LightBlue> <br/>
                                     <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
                                     <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
                                 </Indent>
