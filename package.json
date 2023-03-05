@@ -12,12 +12,13 @@
         "@headlessui/react": "^1.7.4",
         "@heroicons/react": "^2.0.13",
         "@vercel/analytics": "^0.1.5",
+        "dayjs": "^1.11.7",
         "eslint": "8.27.0",
         "eslint-config-next": "13.0.3",
         "next": "13.0.3",
         "react": "18.2.0",
         "react-dom": "18.2.0",
-        "react-tailwindcss-datepicker": "^1.4.0"
+        "react-tailwindcss-datepicker": "^1.4.2"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.3",
