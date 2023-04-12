@@ -1815,10 +1815,10 @@ react-is@^16.13.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-tailwindcss-datepicker@^1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/react-tailwindcss-datepicker/-/react-tailwindcss-datepicker-1.4.2.tgz#c721beb7c912af231b4ac69d4cc5bce741f3241f"
-  integrity sha512-w5KZkmTebV1IpU89xy7yBKcFnAGpcyJ4BGPuLPvthXTJk85NgRZ+3Q1PHxYFlWHR2qmLMuq6Pv9F8MYPL3QxvA==
+react-tailwindcss-datepicker@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/react-tailwindcss-datepicker/-/react-tailwindcss-datepicker-1.6.0.tgz#7c0a535846b06bfbaa1a5724ac6afa64d2eedf4d"
+  integrity sha512-I91mZzH/EbnuT2PUDwKCHAv0MttYOC8PMzSs6uJMhYN7dJYWpziWcDaArFJlpqyNBI022zEuqeW5XrVaGpoIYA==
 
 react@18.2.0:
   version "18.2.0"

@@ -37,7 +37,7 @@ const Nav = () => {
                     </div>
 
                     <div className="hidden md:block">
-                        <span className="text-xs bg-gray-100 dark:text-white/50 dark:bg-slate-600 dark:border-slate-500 font-semibold text-gray-500 border rounded-full px-2 py-0.5">1.4.2</span>
+                        <span className="text-xs bg-gray-100 dark:text-white/50 dark:bg-slate-600 dark:border-slate-500 font-semibold text-gray-500 border rounded-full px-2 py-0.5">1.6.0</span>
                     </div>
                 </div>
             </Link>
