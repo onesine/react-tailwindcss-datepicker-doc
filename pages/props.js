@@ -79,6 +79,10 @@ const Props = () => {
                 url: "#toggle-class"
             },
             {
+                text: "Popover direction",
+                url: "#popover-direction"
+            },
+            {
                 text: "Min Date and Max Date",
                 url: "#min-date-and-max-date"
             },
@@ -907,6 +911,66 @@ const Props = () => {
             </CodeWindow>
 
             <Separator/>
+
+             <Title2 id="popover-direction">Popover direction</Title2>
+             <p>Use the <ImportantWord>popoverDirection</ImportantWord> props to set the display position of the calendar.</p>
+             <p>
+                 <ImportantWord>popoverDirection</ImportantWord> can take the value <ImportantWord>&quot;up&quot;</ImportantWord> or <ImportantWord>&quot;down&quot;</ImportantWord>.
+                 By default <ImportantWord>popoverDirection</ImportantWord> is <ImportantWord>undefined</ImportantWord>
+             </p>
+
+             <div className="my-7">
+                 <Datepicker
+                     value={minMaxValue}
+                     popoverDirection={"up"}
+                     onChange={setMinMaxValue}
+                 />
+             </div>
+
+             <CodeWindow>
+                 <ReactImport/>
+                 <InstallDatepicker/>
+                 <br/>
+                 <Keyword>const</Keyword> App <LightBlue>= () {"=>"} {"{"}</LightBlue> <br/>
+                 <Indent>
+                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
+                     <Indent>
+                         <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                     </Indent>
+                     <LightBlue>{"}"});</LightBlue> <br/><br/>
+
+                     <Keyword>const</Keyword> handleValueChange <LightBlue>= (</LightBlue><Red>newValue</Red><LightBlue>) {"=>"} {"{"}</LightBlue>
+                     <Indent>
+                         console<LightBlue>.</LightBlue><FunctionColor>log</FunctionColor><LightBlue>(</LightBlue><StringText>newValue:</StringText><LightBlue>,</LightBlue> <Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                         <FunctionColor>setValue</FunctionColor><LightBlue>(</LightBlue><Red>newValue</Red><LightBlue>);</LightBlue> <br/>
+                     </Indent>
+                     <LightBlue>{"}"}</LightBlue> <br/><br/>
+
+                     <Keyword>return</Keyword> (
+                     <Indent>
+                         <Indent>
+                             <LightBlue>{"<"}</LightBlue><Red>Datepicker</Red> <br/>
+                             <Indent>
+                                 <Indent>
+                                     <Keyword>value</Keyword><LightBlue>={"{"}</LightBlue>value<LightBlue>{"}"}</LightBlue> <br/>
+                                     <Keyword>popoverDirection</Keyword><LightBlue>={"\""}</LightBlue>up<LightBlue>{"\""}</LightBlue> <br/>
+                                     <Keyword>onChange</Keyword><LightBlue>={"{"}</LightBlue>handleValueChange<LightBlue>{"}"}</LightBlue> <br/>
+                                 </Indent>
+                             </Indent>
+                             <LightBlue>/{">"}</LightBlue> <br/>
+                         </Indent>
+                     </Indent>
+                     );
+                 </Indent>
+
+                 <LightBlue>{"}"};</LightBlue> <br/>
+
+                 <Keyword>export</Keyword> <Keyword>default</Keyword> App;
+             </CodeWindow>
+
+
+             <Separator/>
 
 
             <Title2 id="min-date-and-max-date">Min Date and Max Date</Title2>
