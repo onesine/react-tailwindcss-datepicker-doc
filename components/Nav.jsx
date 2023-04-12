@@ -26,21 +26,28 @@ const Nav = () => {
 
     return (
         <nav className="fixed bg-white z-40 w-full  flex items-center justify-between py-3 md:py-6 px-4 md:px-10 border-b dark:bg-slate-900 dark:border-slate-700">
-            <Link href="/" className={`relative group ${router.pathname !== "/" ? "focus:outline-none" : ""}`}>
+            <div className={`relative group ${router.pathname !== "/" ? "focus:outline-none" : ""}`}>
                 <div className={`w-full bg-white text-white/0 dark:bg-slate-900 absolute ${showLink ? 'hidden lg:block' : 'hidden'}`}>.</div>
 
                 <div className="flex item-center space-x-3">
-                    <div className="flex items-center space-x-3 cursor-pointer group">
+                    <Link href="/" className="flex items-center space-x-3 cursor-pointer group">
                         <CalendarDaysIcon className="w-6 h-6 text-sky-400"/>
 
                         <span className="hover:transition-all hover:duration-300 font-medium text-gray-700 group-hover:text-gray-500 dark:text-white/80">React Tailwindcss Datepicker</span>
-                    </div>
+                    </Link>
 
                     <div className="hidden md:block">
-                        <span className="text-xs bg-gray-100 dark:text-white/50 dark:bg-slate-600 dark:border-slate-500 font-semibold text-gray-500 border rounded-full px-2 py-0.5">1.6.0</span>
+                        <Link
+                            href="https://github.com/onesine/react-tailwindcss-datepicker/releases/tag/v1.6.0"
+                            target="_blank"
+                            className="text-xs bg-gray-100 dark:text-white/50 dark:bg-slate-600 dark:border-slate-500 font-semibold text-gray-500 border rounded-full px-2 py-0.5"
+                            rel="noreferrer"
+                        >
+                            1.6.0
+                        </Link>
                     </div>
                 </div>
-            </Link>
+            </div>
 
             <div className="flex items-center space-x-6 text-sm font-medium">
                 {links.map((item, index) => (
