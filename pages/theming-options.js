@@ -16,6 +16,7 @@ import TailwindColors from "../components/TailwindColors";
 import Datepicker from "react-tailwindcss-datepicker";
 import ToggleTheme from "../components/ToggleTheme";
 import AsideWindow from "../components/AsideWindow";
+import InfoAlert from "../components/InfoAlert";
 
 const ThemingOptions = () => {
     useEffect(() => {
@@ -77,11 +78,9 @@ const ThemingOptions = () => {
                 </div>
             </div>
 
-            <div className="bg-blue-50/50 text-sm rounded-md border border-blue-300 p-4 text-blue-900/70 dark:border-blue-300/30 dark:text-blue-400 dark:bg-blue-400/10">
-                <h4 className="font-bold uppercase mb-3">Info</h4>
-
-                <p>⚠️ The colors are clickable. So you can click on one of them to try the corresponding theme. This will change the theme of the date pickers on this page.</p>
-            </div>
+            <InfoAlert>
+                ⚠️ The colors are clickable. So you can click on one of them to try the corresponding theme. This will change the theme of the date pickers on this page.
+            </InfoAlert>
 
             <Separator/>
 

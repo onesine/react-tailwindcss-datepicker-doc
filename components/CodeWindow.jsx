@@ -17,11 +17,11 @@ export const Title2 = ({children, id}) => {
     const [showAnchor, setShowAnchor] = useState(false);
 
     return (
-        <h1 id={id} className="relative text-2xl text-gray-700 mb-4 font-bold dark:text-white/80" onMouseOver={() => setShowAnchor(true)} onMouseLeave={() => setShowAnchor(false)}>
+        <h2 id={id} className="relative text-2xl text-gray-700 mb-4 font-bold dark:text-white/80" onMouseOver={() => setShowAnchor(true)} onMouseLeave={() => setShowAnchor(false)}>
             <span>{children}</span>
 
             <a href={`#${id}`} className={`absolute -left-6 ${showAnchor ? "inline-block" : "hidden"} w-full text-sky-500`}>#</a>
-        </h1>
+        </h2>
     );
 };
 
@@ -78,7 +78,7 @@ export const StringText = ({children}) => (
 
 export const ImportantWord = ({children}) => {
     return (
-        <span className="bg-gray-200 px-2 py-0.5 md:py-1 rounded-md text-xs md:text-sm text-sky-800 dark:bg-white/20 dark:text-white/70">{children}</span>
+        <span className="bg-gray-200 px-1.5 py-0.5 md:py-[O.22rem] rounded-md text-xs md:text-sm text-sky-800 dark:bg-white/20 dark:text-white/70">{children}</span>
     );
 };
 
