@@ -92,7 +92,7 @@ const Props = () => {
 
     const [defaultConfig, setDefaultConfig] = useState(defaultValue);
 
-    const [singleDate, setSingleDate] = useState(defaultConfig);
+    const [singleDate, setSingleDate] = useState(defaultValue);
 
     const [range, setRange] = useState(defaultValue);
     const [rangeAndSingle, setRangeAndSingle] = useState(defaultValue);
@@ -138,7 +138,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -194,7 +194,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -251,7 +251,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -306,7 +306,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -364,7 +364,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -421,7 +421,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -477,7 +477,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -534,7 +534,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -595,7 +595,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -651,7 +651,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -707,7 +707,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -763,7 +763,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -819,7 +819,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -876,7 +876,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -935,7 +935,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
@@ -994,7 +994,7 @@ const Props = () => {
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>

@@ -69,7 +69,7 @@ const Install = () => {
 
             <CodeWindow>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <LightBlue>"</LightBlue><StringColor>dayjs</StringColor><LightBlue>": "</LightBlue><StringColor>^1.11.6</StringColor><LightBlue>"</LightBlue> <br/>
+                <LightBlue>"</LightBlue><StringColor>dayjs</StringColor><LightBlue>": "</LightBlue><StringColor>^1.11.6</StringColor><LightBlue>",</LightBlue> <br/>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <LightBlue>"</LightBlue><StringColor>react</StringColor><LightBlue>": "</LightBlue><StringColor>^18.2.0</StringColor><LightBlue>"</LightBlue> <br/>
             </CodeWindow>

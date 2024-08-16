@@ -38,12 +38,12 @@ const Nav = () => {
 
                     <div className="hidden md:block">
                         <Link
-                            href="https://github.com/onesine/react-tailwindcss-datepicker/releases/tag/v1.6.0"
+                            href="https://github.com/onesine/react-tailwindcss-datepicker/releases/tag/v1.6.1"
                             target="_blank"
                             className="text-xs bg-gray-100 dark:text-white/50 dark:bg-slate-600 dark:border-slate-500 font-semibold text-gray-500 border rounded-full px-2 py-0.5"
                             rel="noreferrer"
                         >
-                            1.6.0
+                            1.6.1
                         </Link>
                     </div>
                 </div>

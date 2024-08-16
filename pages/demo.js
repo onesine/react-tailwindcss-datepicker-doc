@@ -52,13 +52,15 @@ const Demo = () => {
 
             <CodeWindow>
                 <ReactImport/>
+
                 <InstallDatepicker/>
+
                 <br/>
                 <Keyword>const</Keyword> App <LightBlue>= () {"=>"} {"{"}</LightBlue> <br/>
                 <Indent>
                     <Keyword>const</Keyword> [value, setValue] <LightBlue>=</LightBlue> <FunctionColor>useState</FunctionColor><LightBlue>({"{"}</LightBlue> <br/>
                     <Indent>
-                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
+                        <Red>startDate</Red><LightBlue>:</LightBlue> <Red>null</Red><LightBlue>,</LightBlue> <br/>
                         <Red>endDate</Red><LightBlue>:</LightBlue> <Red>null</Red> <br/>
                     </Indent>
                     <LightBlue>{"}"});</LightBlue> <br/><br/>
