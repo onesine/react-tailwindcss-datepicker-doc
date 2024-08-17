@@ -433,7 +433,7 @@ const App = () => {
                 shortcuts: {
                     today: "TText",
                     yesterday: "YText",
-                    past: period => \`P-$\{period} text\`,
+                    past: period => "P-"+ period + " text",
                     currentMonth: "CMText",
                     pastMonth: "PMText"
                 },
@@ -520,7 +520,7 @@ const App = () => {
                 shortcuts: {
                     today: "Aujourd'hui",
                     yesterday: "Hier",
-                    past: period => \`Les $\{period} derniers jours\`,
+                    past: period => "Les "+ period +" derniers jours",
                     currentMonth: "Ce mois-ci",
                     pastMonth: "Le mois dernier"
                 },
