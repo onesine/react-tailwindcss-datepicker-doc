@@ -53,5 +53,8 @@
         "*.{html,css,scss,json,md}": [
             "prettier"
         ]
+    },
+    "engines": {
+        "node": "20.x"
     }
 }
