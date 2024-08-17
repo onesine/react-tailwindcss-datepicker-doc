@@ -1,3 +1,27 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "next/core-web-vitals"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["import", "prettier"],
+    "rules": {
+        "indent": ["error", 4],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"],
+        "no-console": "warn",
+        "import/order": [
+            "error",
+            {
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                },
+                "newlines-between": "always"
+            }
+        ],
+        "prettier/prettier": "error"
+    }
 }
