@@ -6,7 +6,7 @@ export const Title1 = ({ children, id }: { children: ReactNode; id: string }) =>
     return (
         <h1
             id={id}
-            className="relative text-3xl text-gray-700 mb-4 font-bold dark:text-white/80"
+            className="relative text-xl md:text-3xl text-gray-700 mb-4 font-bold dark:text-white/80"
             onMouseOver={() => setShowAnchor(true)}
             onMouseLeave={() => setShowAnchor(false)}
         >
@@ -14,7 +14,7 @@ export const Title1 = ({ children, id }: { children: ReactNode; id: string }) =>
 
             <a
                 href={`#${id}`}
-                className={`absolute -left-7 ${showAnchor ? "inline-block" : "hidden"} w-full text-sky-500`}
+                className={`absolute left-[-1.05rem] md:left-[-1.75rem] ${showAnchor ? "inline-block" : "hidden"} w-full text-sky-500`}
             >
                 #
             </a>
@@ -28,7 +28,7 @@ export const Title2 = ({ children, id }: { children: ReactNode; id: string }) =>
     return (
         <h2
             id={id}
-            className="relative text-2xl text-gray-700 mb-4 font-bold dark:text-white/80"
+            className="relative text-lg md:text-2xl text-gray-700 mb-4 font-bold dark:text-white/80"
             onMouseOver={() => setShowAnchor(true)}
             onMouseLeave={() => setShowAnchor(false)}
         >
@@ -36,7 +36,7 @@ export const Title2 = ({ children, id }: { children: ReactNode; id: string }) =>
 
             <a
                 href={`#${id}`}
-                className={`absolute -left-6 ${showAnchor ? "inline-block" : "hidden"} w-full text-sky-500`}
+                className={`absolute left-[-1rem] md:left-[-1.5rem] ${showAnchor ? "inline-block" : "hidden"} w-full text-sky-500`}
             >
                 #
             </a>
