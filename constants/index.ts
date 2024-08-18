@@ -1,4 +1,4 @@
-export const REACT_TAILWINDCSS_DATEPICKER_VERSION = "1.6.6";
+export const REACT_TAILWINDCSS_DATEPICKER_VERSION = "1.7.0";
 
 export const DEPENDENCIES = `
 {
@@ -16,7 +16,7 @@ module.exports = {
     content: [ 
         // ... 
         "./src/**/*.{js,jsx,ts,tsx}",
-        "./node_modules/react-tailwindcss-datepicker/dist/index.esm.js",
+        "./node_modules/react-tailwindcss-datepicker/dist/index.esm.{js,ts}",
         // ... 
     ]
     // ... 

@@ -32,6 +32,9 @@ MIN_DATE.setDate(MIN_DATE.getDate() - 4);
 const MAX_DATE = new Date();
 MAX_DATE.setDate(MAX_DATE.getDate() + 4);
 
+const START_FROM_DATE = new Date();
+START_FROM_DATE.setMonth(START_FROM_DATE.getMonth() + 1);
+
 const LINKS = {
     "On this page": [
         {
@@ -260,9 +263,9 @@ const Props = () => {
 
             <div className="my-7">
                 <Datepicker
+                    startFrom={START_FROM_DATE}
                     value={startForm}
                     onChange={value => setStartForm(value)}
-                    startFrom={new Date("2022-01-01")}
                 />
             </div>
 
