@@ -13,6 +13,7 @@ import {
     DISABLE,
     DISPLAY_FORMAT,
     INPUT_CLASS_NAME,
+    INPUT_ID_NAME_REQUIRED,
     MIN_DATE_MAX_DATE,
     PLACEHOLDER,
     POPOVER_DIRECTION,
@@ -82,6 +83,10 @@ const LINKS = {
             url: "#disabled"
         },
         {
+            text: "Input id, name and required",
+            url: "#input-id-name-required"
+        },
+        {
             text: "Input class",
             url: "#input-class"
         },
@@ -126,6 +131,7 @@ const Props = () => {
     const [displayFormat, setDisplayFormat] = useState<DateValueType>(defaultValue);
     const [toggleClassNameValue, setToggleClassNameValue] = useState<DateValueType>(defaultValue);
     const [minMaxValue, setMinMaxValue] = useState<DateValueType>(defaultValue);
+    const [inputId, setInputId] = useState<DateValueType>(defaultValue);
 
     return (
         <DocLayout aside={<AsideWindow links={LINKS} />}>
@@ -346,7 +352,7 @@ const Props = () => {
             <Title2 id="disabled">Disabled</Title2>
             <p>
                 Use the <ImportantWord>disabled</ImportantWord> props to disable the{" "}
-                <ImportantWord>react-tailwindcss-select</ImportantWord> field.
+                <ImportantWord>react-tailwindcss-datepicker</ImportantWord> field.
             </p>
             <p className="mt-1">
                 By default, the value is <ImportantWord>false</ImportantWord>.
@@ -362,6 +368,31 @@ const Props = () => {
 
             <CodeHighlighter language="tsx" code={DISABLE} />
 
+            <Separator />
+
+            <Title2 id="input-id-name-required">Input id, name and required</Title2>
+            <p>
+                Use the <ImportantWord>inputId</ImportantWord>,{" "}
+                <ImportantWord>inputName</ImportantWord> and <ImportantWord>required</ImportantWord>{" "}
+                props to add <ImportantWord>id</ImportantWord>, <ImportantWord>name</ImportantWord>{" "}
+                and <ImportantWord>required</ImportantWord> to the{" "}
+                <ImportantWord>react-tailwindcss-datepicker</ImportantWord> field.
+            </p>
+            <p className="mt-1">
+                By default, required value is <ImportantWord>false</ImportantWord>.
+            </p>
+
+            <div className="my-7">
+                <Datepicker
+                    inputId="datepicker"
+                    inputName="datepicker"
+                    required={true}
+                    value={inputId}
+                    onChange={value => setInputId(value)}
+                />
+            </div>
+
+            <CodeHighlighter language="tsx" code={INPUT_ID_NAME_REQUIRED} />
             <Separator />
 
             <Title2 id="input-class">Input class</Title2>

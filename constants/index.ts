@@ -304,6 +304,29 @@ const App = () => {
 export default App;
 `;
 
+export const INPUT_ID_NAME_REQUIRED = `import { useState } from "react"; 
+import Datepicker from "react-tailwindcss-datepicker";
+
+const App = () => { 
+    const [value, setValue] = useState({ 
+        startDate: null, 
+        endDate: null
+    });
+
+    return (
+        <Datepicker
+            inputId="datepicker"
+            inputName="datepicker"
+            required={true}
+            value={value} 
+            onChange={newValue => setValue(newValue)}
+        /> 
+    );
+};
+
+export default App;
+`;
+
 export const INPUT_CLASS_NAME = `import { useState } from "react"; 
 import Datepicker from "react-tailwindcss-datepicker";
 
