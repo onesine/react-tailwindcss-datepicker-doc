@@ -22,7 +22,7 @@
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-syntax-highlighter": "^15.5.0",
-        "react-tailwindcss-datepicker": "^1.7.1"
+        "react-tailwindcss-datepicker": "^1.7.2"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.3",
