@@ -1,4 +1,4 @@
-export const REACT_TAILWINDCSS_DATEPICKER_VERSION = "1.7.0";
+export const REACT_TAILWINDCSS_DATEPICKER_VERSION = "1.7.1";
 
 export const DEPENDENCIES = `
 {
