@@ -2694,10 +2694,10 @@ react-syntax-highlighter@^15.5.0:
     prismjs "^1.27.0"
     refractor "^3.6.0"
 
-react-tailwindcss-datepicker@^1.7.2:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/react-tailwindcss-datepicker/-/react-tailwindcss-datepicker-1.7.2.tgz#ee2525b2a82211fc5756285265feaa459e102301"
-  integrity sha512-/NIRLB1evT69pt3Syol3cZpsAnLZlGvFWav98/Rr77Gey382C1fjKW2Emgu+SC4NtiRt6CBFwx/0Wbkn4iI+nA==
+react-tailwindcss-datepicker@^1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/react-tailwindcss-datepicker/-/react-tailwindcss-datepicker-1.7.3.tgz#c583501b894dbc343c22535329d358fc67a329e5"
+  integrity sha512-C0biZZg0IDvttqq3+Ey0qKMTF4QWtM2nPv9X2SL8RdQIuH+/MJRcsrKcXV0+SK45Zjy/dW5fICDKLcSB+f5ezg==
 
 react@18.2.0:
   version "18.2.0"
