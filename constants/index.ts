@@ -1,10 +1,10 @@
-export const REACT_TAILWINDCSS_DATEPICKER_VERSION = "1.7.3";
+export const REACT_TAILWINDCSS_DATEPICKER_VERSION = "1.7.4";
 
 export const DEPENDENCIES = `
 {
     // ...
-    "dayjs": "^1.11.6", 
-    "react": "^18.2.0" 
+    "dayjs": "^1.11.12", 
+    "react": "^18.2.0" | "19.0.0"
     // ...
 }
 `;
