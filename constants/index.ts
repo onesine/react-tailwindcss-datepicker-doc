@@ -1,10 +1,13 @@
 export const REACT_TAILWINDCSS_DATEPICKER_VERSION = "1.7.4";
 
+export const SUPPORTED_VERSIONS_URL =
+    "https://github.com/onesine/react-tailwindcss-datepicker/tree";
+
 export const DEPENDENCIES = `
 {
     // ...
     "dayjs": "^1.11.12", 
-    "react": "^18.2.0" | "19.0.0"
+    "react": "^17.0.0" | "^18.0.0" | "^19.0.0"
     // ...
 }
 `;

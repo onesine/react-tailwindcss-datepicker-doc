@@ -28,7 +28,7 @@ export const Title2 = ({ children, id }: { children: ReactNode; id: string }) =>
     return (
         <h2
             id={id}
-            className="relative text-lg md:text-2xl text-gray-700 mb-4 font-bold dark:text-white/80"
+            className="relative text-lg md:text-xl text-gray-700 mb-4 font-bold dark:text-white/80"
             onMouseOver={() => setShowAnchor(true)}
             onMouseLeave={() => setShowAnchor(false)}
         >
