@@ -54,7 +54,7 @@ const Install = () => {
             <Title2 id="supported-version">Supported versions</Title2>
             <p className="mb-4">
                 Only <strong>react-tailwindcss-datepicker</strong> versions greater than or equal to{" "}
-                <strong>1.7.4</strong> receive bug fixes and new features. The table below lists
+                <strong>2.x</strong> receive bug fixes and new features. The table below lists
                 compatibility with the different
                 <strong> react</strong> versions:
             </p>
@@ -75,9 +75,9 @@ const Install = () => {
                         <td className="px-6 py-4 border-r dark:border-slate-700 whitespace-nowrap">
                             <a
                                 className="text-sky-500 hover:underline"
-                                href={`${SUPPORTED_VERSIONS_URL}/v1.7.4`}
+                                href={`${SUPPORTED_VERSIONS_URL}/v2.0.0`}
                             >
-                                {">= 1.7.4"}
+                                {"2.x"}
                             </a>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">19.x</td>
@@ -88,7 +88,7 @@ const Install = () => {
                                 className="text-sky-500 hover:underline"
                                 href={`${SUPPORTED_VERSIONS_URL}/v1.7.3`}
                             >
-                                {"<= 1.7.3"}
+                                {"1.x"}
                             </a>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">17.x, 18.x</td>
